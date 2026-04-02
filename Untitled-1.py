@@ -1,102 +1,59 @@
 
-productlist = ["Coffee"]
-
-
-def add_product():
-    newproduct = str(input(f'Please add a new product: '))
-
-    productlist.append(newproduct)
-
-    print(productlist)
-
-def remove_product():
-    print("this is where you remove a product")
-    print()
-
-
-add_product()
-remove_product()
+productlist = ["Coffee", "tea", "sugar", "milk"] 
 
 
 
 
+def do_loop():
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def do_that():
 
     #for loop
 
     j=0                                 # j is used as a place holder to add +1 every loop
 
     for i in productlist:               # create the for loop and create a variable called i    
-        print(j, i, sep =" ")           # the loop will run for each item in productlist (in this case 1) 
+        print(j, i, sep =" ")           # the loop will run for each item in productlist
         j+=1                            # this adds + 1 to j every itteration
 
-productlist = ["Coffee"]
-
-print("........................")
-print()
-print(productlist)
-print()
-print("........................")
-
-newproduct = str(input(f'Please add a new product: '))
-
-productlist.append(newproduct)
-
-print("........................")
-print()
-print(productlist)
-print()
-print("........................")
-print()
 
 
+def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
 
-#for loop
+    print()
+    print("--------------------------------------------")
+    print() 
+    print("    *****   Welcome to the Main Menu   *****")
+    print()
+    print("--------------------------------------------")
+    print()
+    print("             Press 0 to exit                ")
+    print("             Press 1 for products menu      ")
+   
+    choice = int(input(""))
 
-j=0                                 # j is used as a place holder to add +1 every loop
+    if choice ==1:
+        product_menu()
 
-for i in productlist:               # create the for loop and create a variable called i
-    print(j, i, sep =" ")           # the loop will run for each item in productlist (in this case 1) 
-    j+=1                            # this adds + 1 to j every itteration
+def product_menu(): #SELECT A RANGE OF OPTIONS 1. PRINT PRODUCT LIST 2. ADD PRODUCT 3.UPDATE PRODUCT 4.REMOVE PRODUCT. AND 0 TO RETURN TO MAIN MENU
+      print("this is a product menu")
+
+def add_product(): # ADD NEW PRODUCTS TO A LIST
 
 
+    newproduct = str(input(f'Please add a new product: '))
+
+    productlist.append(newproduct)
+
+    print(productlist)
+
+def remove_product():# REMOVE PRODUCTS FROM A LIST USING INDEX NUMBER
 
 
+    print("this is where you remove a product")
 
-print()
-print("........................")
+def update_product(): # UPDATE PRODUCT USING INDEX
+    print()
+
+main_menu()
+
 

@@ -1,5 +1,5 @@
 product_list = []
-#yessssssssssssssssssssssss
+#dododododo
 def main_menu(): #WORKING
    
     while True:
@@ -72,7 +72,7 @@ def update_product():#WORKING
         print_list()
         try:
             update_index = int(input(f'Please enter the index number of the item you want to update: '))
-            #considering a check for index number here but not sure if relevant 
+            
             old = product_list[update_index]
             
             print()
@@ -95,12 +95,15 @@ def update_product():#WORKING
 def remove_product():#WORKING
     
     remove_index = (int(input(f'Please choose item (by index number) to remove: ')))
+
     deleted_item = product_list[remove_index]
+
     choice = (int(input(f'Are you sure you want to remove {product_list[remove_index]}? (1) Yes (2) No > ')))
     
     if choice == 1:
         product_list.pop(remove_index)
         print(f'{deleted_item} has been removed to the list')
+
     elif choice == 2:
         return
 
@@ -118,6 +121,7 @@ def print_list():#WORKING
 
     
 main_menu()
+
 
 
 
