@@ -124,6 +124,9 @@ main_menu()
 
 
 
+ #create new and append
+ #update product | print list with index > get user input for product index > get user input for new name > upadate
+ #delete product | print with index > delete by index value
 
 
 
