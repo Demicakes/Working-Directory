@@ -1,24 +1,12 @@
 
-productlist = ["Coffee", "tea", "sugar", "milk"] 
-
-
-
-
-def do_loop():
-
-
-    #for loop
-
-    j=0                                 # j is used as a place holder to add +1 every loop
-
-    for i in productlist:               # create the for loop and create a variable called i    
-        print(j, i, sep =" ")           # the loop will run for each item in productlist
-        j+=1                            # this adds + 1 to j every itteration
-
-
+productlist = ["Coffee", "Tea", "Sugar", "Milk"] #list populated for debug but will be cleared 
 
 def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
 
+    x = 5 
+    y = 10
+    print(x,y)
+    
     print()
     print("--------------------------------------------")
     print() 
@@ -33,23 +21,44 @@ def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
 
     if choice ==1:
         product_menu()
+    elif choice == 0:
+        exit()
 
+def print_list():
+     print("#PRINT LIST") #DEBUG
+
+     j = 0
+     print()
+     
+     for i in productlist:
+        print(j, " ", i, sep="")
+        j+=1
+     print()
+    
 def product_menu(): #SELECT A RANGE OF OPTIONS 1. PRINT PRODUCT LIST 2. ADD PRODUCT 3.UPDATE PRODUCT 4.REMOVE PRODUCT. AND 0 TO RETURN TO MAIN MENU
-      print("this is a product menu")
+      print("PRODUCT MENU") #DEBUG
 
+      print_list()
+      
 def add_product(): # ADD NEW PRODUCTS TO A LIST
-
-
-    newproduct = str(input(f'Please add a new product: '))
-
-    productlist.append(newproduct)
-
-    print(productlist)
-
+        newproduct = str(input(f'Please add a new product: '))
+        productlist.append(newproduct)
+        print(productlist)
+        
 def remove_product():# REMOVE PRODUCTS FROM A LIST USING INDEX NUMBER
+    print("#REMOVE PRODUCT") #DEBUG
 
+    remove_index = int(input(f'Please select item (by index) to remove: '))
+    deleted_item = productlist[remove_index]
 
-    print("this is where you remove a product")
+    print()
+    choice = int(input((f'Are you sure that you want to delete {productlist[remove_index]}? ')))
+    if choice == 1:
+        productlist.pop(remove_index)
+        print(f'ITEM REMOVED - {deleted_item} has been removed from the product list')
+
+    elif choice == 0:
+        return()
 
 def update_product(): # UPDATE PRODUCT USING INDEX
     print()

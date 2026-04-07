@@ -1,6 +1,5 @@
-product_list = []
-#yoyoyoyoyoy
-
+product_list = ["coffee", "Tea", "Sugar", "milk", "green tea"]
+#doodoo 123
 def main_menu(): #WORKING
    
     while True:
@@ -109,7 +108,7 @@ def remove_product():#WORKING
         return
 
 def print_list():#WORKING
-     i = 0 
+     
      j = 0
      
      print("#PRINT LIST")
@@ -122,6 +121,7 @@ def print_list():#WORKING
 
     
 main_menu()
+
 
 
 
