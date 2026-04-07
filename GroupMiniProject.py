@@ -1,4 +1,4 @@
-#Group Project
+#There is no spoon
 productlist = ["Coffee", "Tea", "Sugar", "Milk"] #list populated for debug but will be cleared 
 
 def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
