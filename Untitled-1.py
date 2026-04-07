@@ -1,4 +1,4 @@
-
+#Group Project
 productlist = ["Coffee", "Tea", "Sugar", "Milk"] #list populated for debug but will be cleared 
 
 def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
@@ -6,7 +6,7 @@ def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
     x = 5 
     y = 10
     print(x,y)
-    
+
     print()
     print("--------------------------------------------")
     print() 
