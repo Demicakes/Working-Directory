@@ -1,4 +1,3 @@
-#There is no spoon
 productlist = ["Coffee", "Tea", "Sugar", "Milk"] #list populated for debug but will be cleared 
 
 def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
@@ -24,7 +23,7 @@ def main_menu(): # 1 FOR PRODUCT MENU 0 TO EXIT
     elif choice == 0:
         exit()
 
-def print_list():
+def print_list():# LIST TO BE PRINTED VERTICALLY WITH INDEX NUMBER 
      print("#PRINT LIST") #DEBUG
 
      j = 0
@@ -63,6 +62,15 @@ def remove_product():# REMOVE PRODUCTS FROM A LIST USING INDEX NUMBER
 def update_product(): # UPDATE PRODUCT USING INDEX
     print()
 
-main_menu()
+def countdown():
+     
+    counter = 10
+
+    while counter != 0:
+            print(f'T-minus {counter}')
+            time.sleep(1)
+            counter -= 1
+    print('Blast off!!!')
+
 
 
